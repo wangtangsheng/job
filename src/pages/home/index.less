@@ -1,0 +1,97 @@
+.search_box {
+    position  : relative;
+    height    : 478px;
+    width     : 100%;
+    background: url('https://img.alicdn.com/tfs/TB14TEEm7CWBuNjy0FaXXXUlXXa-1440-478.png') no-repeat 100% 100%;
+
+    &::after {
+        content         : '';
+        position        : absolute;
+        top             : 0;
+        left            : 0;
+        right           : 0;
+        bottom          : 0;
+        z-index         : 1;
+        background-color: rgba(31, 56, 88, 0.40);
+    }
+
+    .content {
+        position: absolute;
+        top     : 50%;
+        left    : 50%;
+        width   : 490px;
+        height  : 296px;
+
+        transform: translate3d(-50%, -50%, 0);
+        z-index  : 2;
+    }
+
+    .en_text {
+        font-family: Rufina-Bold, sans-serif;
+        font-size  : 54px;
+        color      : #fff;
+        line-height: 56px;
+    }
+
+    .zh_text {
+        font-family  : Rufina-Bold, sans-serif;
+        font-size    : 34px;
+        color        : #fff;
+        margin-bottom: 38px;
+        line-height  : 48px;
+    }
+
+    .keywords_box {
+        color     : rgba(255, 255, 255, 0.8);
+        text-align: center;
+        font-size : 12px;
+
+        .sub_title {
+            margin-right: 5px;
+        }
+
+        .keyword {
+            display: inline-block;
+            padding: 0 5px;
+            cursor : pointer;
+
+            &:hover {
+                color: #F37327;
+            }
+        }
+    }
+
+}
+
+.detail_box {
+    width : 1180px;
+    height: 300px;
+    margin: 32px auto;
+    display: flex;
+    .job_wrapper{
+        flex:1;
+        height       : 300px;
+        margin-right: 20px;
+    }
+    
+
+    .card_box {
+        width: 300px;
+        .href{
+            display: block;
+            cursor: pointer;
+            height: 140px;
+            background: #FFFFFF;
+            box-shadow: 0 0 15px 0 rgba(31,56,88,0.08);
+            border-radius: 3px;
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 140px;
+            .img{
+                vertical-align: middle;
+                
+            }
+        }
+    }
+}

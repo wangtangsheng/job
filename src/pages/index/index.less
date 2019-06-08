@@ -1,0 +1,79 @@
+@bgc:#2c2f33;
+.layout {
+    .layout_header {
+        height     : 54px;
+        line-height: 54px;
+        padding:0  100px;
+        background-color: @bgc;
+
+        .logo {
+            width : 124px;
+            height: 20px;
+        }
+
+        .line {
+            width  : 2px;
+            height : 20px;
+            background:rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+
+        .text {
+            color     : white;
+            font-style: normal;
+            font-size : 14px;
+            opacity   : 0.8;
+        }
+        .header_items{
+            text-align: right;
+        }
+
+        .header_item {
+            font-size  : 14px;
+            color      : #fff;
+            opacity    : 0.8;
+            line-height: 52px;
+            padding    : 10px 15px;
+            margin-left: 4px;
+            cursor     : pointer;
+
+            &.active,
+            &:hover {
+                color: #F37327
+            }
+
+        }
+        .login_box{
+            text-align: right;
+        }
+
+        .welcome {
+            font-size: 12px;
+            color    : #fff;
+            opacity  : 0.8;
+        }
+
+        .login_line{
+            color:#fff;
+            opacity: 0.8;
+        }
+
+        .login,
+        .register {
+            color     : #fff;
+            opacity   : 0.8;
+            font-style: 12px;
+        }
+    }
+
+    .layout_footer {
+        height: 44px;
+        text-align: center;
+        background:  @bgc;
+        color: rgba(255,255,255,0.4);
+        line-height: 44px;
+        padding:0;
+    }
+}
